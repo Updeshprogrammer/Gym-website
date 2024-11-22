@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muscel Gym</title>
+    <!-- fontaws -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- tailwind css -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- tailwind css -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav class="bg-transparent bg-gray-500 z-10 p-4 absolute w-full transition-colors duration-300" id="navbar" >
+        <div class="container lg:px-28 flex justify-between items-center fixed">
+            <!-- Logo -->
+            <a href="#" class="text-2xl font-bold">
+                <img src="logo-white.webp" class="w-16 h-16" alt="Logo">
+            </a>
+    
+            <!-- Hamburger Menu for Mobile -->
+            <button class="text-white md:hidden focus:outline-none" id="menuToggle" aria-label="Toggle navigation">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>
+    
+            <!-- Nav Links for Desktop -->
+            <ul class="hidden md:flex space-x-5">
+                <li><a href="#" class="text-white hover:text-gray-300">Home</a></li>
+                <li><a href="#" class="text-white hover:text-gray-300">About</a></li>
+                <li><a href="#" class="text-white hover:text-gray-300">Features</a></li>
+                <li><a href="#" class="text-white hover:text-gray-300">Our Pricing</a></li>
+                <li><a href="#" class="text-white hover:text-gray-300">Blogs</a></li>
+            </ul>
+        </div>
+    
+        <!-- Mobile Menu -->
+        <ul class="md:hidden mt-4 hidden transition-all duration-300 ease-in-out" id="mobileMenu">
+            <li><a href="#" class="block text-white py-2 px-4 hover:bg-gray-700">Home</a></li>
+            <li><a href="#" class="block text-white py-2 px-4 hover:bg-gray-700">About</a></li>
+            <li><a href="#" class="block text-white py-2 px-4 hover:bg-gray-700">Features</a></li>
+            <li><a href="#" class="block text-white py-2 px-4 hover:bg-gray-700">Our Pricing</a></li>
+            <li><a href="#" class="block text-white py-2 px-4 hover:bg-gray-700">Blogs</a></li>
+        </ul>
+    </nav>
+    
+    <script>
+        // JavaScript to toggle the mobile menu and navbar background color
+        document.getElementById('menuToggle').addEventListener('click', () => {
+            const mobileMenu = document.getElementById('mobileMenu');
+            const navbar = document.getElementById('navbar');
+            
+            mobileMenu.classList.toggle('hidden');
+            navbar.classList.toggle('bg-gray-900'); // Add this class for a background color change
+        });
+    </script>
+    
+    
+    
+    <div class="container bg-[url('gym-main.jpg')] bg-cover  bg-no-repeat text-white z-0 relative lg:px-28">
+        <div class="lg:py-32 px-5 py-40">
+            <h1 class="text-6xl uppercase italic font-bold leading-snug">empower<br>your <span
+                    class="bg-red-600">FITNESS</span><br>
+                journey!</h1>
+            <p class="capitalize">empower your fitness journey unleash your potential. build <br> your strength, and
+                tranform your body with our expert <br>guidance and state-of-the-art facilities</p>
+            <div class="mt-5">
+                <a href="/"
+                    class="bg-red-600 uppercase  px-10 py-2 font-medium text-white mr-4 hover:bg-green-600 hover:text-white">join
+                    us now</a>
+
+            </div>
+
+        </div>
+    </div>
+    
+    
+   
+    
+    <section class=" pt-24 pb-24 bg-slate-50">
+        <div class="container">
+            <h1 class="capitalize text-center lg:text-6xl text-3xl text-bold font-bold ">Why choose Muscle ?</h1>
+            <p class="capitalize text-center mt-4 "> discover the muscleForge difference expert coaching cutting edge
+                equipment and <br> a community committed to your success </p>
+            <div class="grid lg:grid-cols-4 gap-5 lg:m-20 m-5 ">
+                <div class="p-5 bg-white rounded-lg ">
+                    <i class="fa-solid fa-bolt" style="color: #74C0FC; font-size: 30px;"></i>
+                    <h1 class=" capitalize text-2xl font-bold mt-5">elite training <br> zones</h1>
+                    <p class="mt-5 capitalize justify-center">Step into our specialized training zones meticulously
+                        designed for every fitness need
+                    </p>
+                </div>
+                <div class="p-5 bg-white rounded-lg "><i class="fa-sharp fa-solid fa-star"
+                        style="color: #ff0000; font-size: 30px;"></i>
+                    <h1 class=" capitalize text-2xl font-bold mt-5">Holistic Wellness <br> Center
+                    </h1>
+                    <p class="mt-5 capitalize justify-center">Immerse yourself in our holistic weliness oasis, featuring
+                        amenities aimed at nurturing your body
+                    </p>
+                </div>
+                <div class="p-5 bg-white rounded-lg "> <i class="fa-solid fa-puzzle-piece"
+                        style="color: #17ac0c; font-size: 30px;"></i>
+                    <h1 class=" capitalize text-2xl font-bold mt-5">Muscle Group Fitness Studios
+                    </h1>
+                    <p class="mt-5 capitalize justify-center">Dive into our diverse array of group fitness experiences
+                        within our spacious studios
+                    </p>
+                </div>
+                <div class="p-5 bg-white rounded-lg "> <i class="fa-solid fa-file-invoice"
+                        style="color: #FFD43B; font-size: 30px;"></i>
+                    <h1 class=" capitalize text-2xl font-bold mt-5">Nutrition & Lifestyle Hub
+                    </h1>
+                    <p class="mt-5 capitalize justify-center">Elevate your nutrition and lifestyle choices in our
+                        comprehensive hub dedicated to holistic health</p>
+                </div>
+            </div>
+            <div class="mt-5 text-center">
+                <a href="/"
+                    class="bg-red-600 uppercase  px-10 py-2 font-medium text-white mr-4 hover:bg-green-600 hover:text-white ">join
+                    us now</a>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="lg:px-24  px-10 py-24 bg-gray-900 text-white ">
+        <div class="container">
+            <h1 class="capitalize lg:text-5xl text-4xl font-bold"> Tailored Services for Your <br> Ultimate Transformation
+            </h1>
+            <p class="py-5">Customized Programs. Expert Guidance, and Unrivaled Support to Achieve Your Fitness Goals
+            </p>
+            <div class="py-10 grid lg:grid-cols-4">
+                <div class="pr-5">
+                    <h1 class="lg:pt-0 pt-5 font-bold text-2xl" >
+                        Training Programs
+                    </h1>
+                    <img src="training-program.jpeg" class="pt-5" alt="">
+                    <p class="justify-center">Experience tailored workout regimens crafted by our expert trainers to
+                        suit your unique goals, fitness level, and preference
+                    </p>
+                </div>
+                <div class="pr-5">
+                    <h1 class="lg:pt-0 pt-5 font-bold text-2xl ">Nutritional Coaching</h1>
+                    <img src="Nutritional-Coaching.jpeg" class="pt-5" alt="">
+                    <p class="justify-center">Unlock the power of optimal nutrition with personalized meal plans,
+                        dietary guidance and ongoing support from our certified
+                    </p>
+                </div>
+                <div class="pr-5">
+                    <h1 class="lg:pt-0 pt-5 font-bold text-2xl">Group Fitness Classes</h1>
+                    <img src="Group-Fitness.webp" class="pt-5" alt="">
+                    <p class="justify-center">Energize your workouts with our diverse range of group fitness classes,
+                        led by passionate instructors and designed
+                    </p>
+                </div>
+                <div class="pr-5">
+                    <h1 class="lg:pt-0 pt-5 font-bold text-2xl">Recovery and Wellness</h1>
+                    <img src="Recovery and Wellness.jpg" class="pt-5" alt="">
+                    <p class="justify-center">Prioritize your body's recovery and overall wellness with our specialized
+                        recovery sessions, including massage therapy</p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <section class="lg:p-24 py-24 px-10 bg-slate-50">
+        <div class="container">
+            <div class="text-center">
+                <h1 class="lg:text-6xl text-4xl font-bold">Choose Your Path OF Fitness
+                </h1>
+                <p class="mt-5">Discover the Perfect Membership Option to Fit Your Lifestyle and Goals, Tailored Options
+                    to Suit Evory Schedule, Budget, and Ambition. Choose the Perfect Plan
+                </p>
+            </div>
+            <div class="grid grid-cols-3 mt-10 gap-5">
+                <div></div>
+                <div class="bg-red-500 text-white text-center rounded-t-lg border-0">
+                    Recommended
+                </div>
+                <div></div>
+            </div>
+            <div class="grid lg:grid-cols-3  gap-5">
+                <div class="p-10 bg-white border-2 rounded-lg shadow-lg ">
+                    <h1 class="text-red-500 font-bold text-2xl">Starter Package
+                    </h1>
+                    <p class="pt-3 pb-5">Accessible Facilities, Introductory Classes, and Flexible Membership Options
+                        Await
+                    </p>
+                    <p class="pb-5"><span class="text-xl font-bold">$10.99</span>/month</p>
+                    <button
+                        class=" p-4 text-red-500 hover:bg-red-500 hover:text-white border-2 border-red-500 w-full mb-3">
+                        Upgrade to Pro
+                    </button>
+                    <p class="pb-5">Benefit if upgrade</p>
+                    <ul>
+                        <li>
+                            <i class="fa-solid fa-check" style="color: #63E6BE;"></i>
+                            Ideal for beginners or those seeking a flexible commitment
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-check" style="color: #63E6BE;"></i>
+                            Access to basic gym facilities and equipment
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-check" style="color: #63E6BE;"></i>
+                            Limited group classes included
+                        </li>
+                    </ul>
+
+                </div>
+                <div class="p-10 bg-white border-r-2 border-l-2 shadow-lg border-b-2 rounded-b-lg ">
+                    <h1 class="text-red-500 font-bold text-2xl">Pro Package
+
+                    </h1>
+                    <p class="pt-3 pb-5">Accessible Facilities, Introductory Classes, and Flexible Membership Options
+                        Await
+
+                    </p>
+                    <p class="pb-5"><span class="text-xl font-bold">$14.99</span>/month</p>
+                    <button
+                        class=" text-red-500 hover:bg-red-500 hover:text-white p-4 border-2 border-red-500 w-full mb-3">
+                        Upgrade to Pro
+                    </button>
+                    <p class="pb-5">Benefit if upgrade</p>
+                    <ul>
+                        <li>
+                            <i class="fa-solid fa-check" style="color: #63E6BE;"></i>
+                            Perfect for dedicated fitness enthusiasts
+
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-check" style="color: #63E6BE;"></i>
+                            Full access to all gym facilities, equipment, and group classes
+
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-check" style="color: #63E6BE;"></i>
+                            Personalized training session included
+                        </li>
+                    </ul>
+
+                </div>
+                <div class="p-10 bg-white border-2 rounded-lg shadow-lg ">
+                    <h1 class="text-red-500 font-bold text-2xl">Elite Package
+
+                    </h1>
+                    <p class="pt-3 pb-5">Accessible Facilities, Introductory Classes, and Flexible Membership Options
+                        Await
+
+                    </p>
+                    <p class="pb-5"><span class="text-xl font-bold">$29.99</span>/month</p>
+                    <button
+                        class=" text-red-500 hover:bg-red-500 hover:text-white p-4 border-2 border-red-500 w-full mb-3">
+                        Upgrade to Pro
+                    </button>
+                    <p class="pb-5">Benefit if upgrade</p>
+                    <ul>
+                        <li>
+                            <i class="fa-solid fa-check" style="color: #63E6BE;"></i>
+                            Designed for committed to peak performance
+
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-check" style="color: #63E6BE;"></i>
+                            Ideal for beginners or those seeking a flexible commitment
+
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-check" style="color: #63E6BE;"></i>
+                            Limited group classes included
+                        </li>
+                    </ul>
+
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+    <section class="lg:px-24 py-24 px-10 bg-gray-900 text-white ">
+        <div class="container">
+            <h1 class="capitalize lg:text-5xl text-4xl font-bold text-center">Hear What Our Community <br> Has to Say"
+
+            </h1>
+            <p class="py-5 text-center">Discover Real Stories of Transformation, Inspiration, and Success Straight from
+                Our Members</p>
+            <div class="grid lg:grid-cols-5 gap-5 ">
+                <div class="bg-gray-800 rounded-lg shadow-lg py-5 px-5">
+                    <div class="flex items-center">
+                        <i class="fa-solid fa-user-tie pr-5" style="color: #FFD43B; font-size:30px ;"></i>
+                        <h1>Jerome Bell</h1>
+                    </div>
+                    <p class="pt-5">Muscle Gym is always positive and welcoming, making it easy to stay motivated and
+                        committed to my fitness goals. Plus, the facilities are impeccably clean and well-maintained,
+                        which
+                        is important to me. I couldn't be happier with my decision to join Muscle Gyml
+                    </p>
+                </div>
+                <div class="bg-gray-800 rounded-lg shadow-lg py-5 px-5">
+                    <div class="flex items-center">
+                        <i class="fa-solid fa-user-tie pr-5" style="color: #ff0000; font-size:30px ;"></i>
+                        <h1>Jerome Bell</h1>
+                    </div>
+                    <p class="pt-5">Muscle Gym is always positive and welcoming, making it easy to stay motivated and
+                        committed to my fitness goals. Plus, the facilities are impeccably clean and well-maintained,
+                        which
+                        is important to me. I couldn't be happier with my decision to join Muscle Gyml
+                    </p>
+                </div>
+                <div class="bg-gray-800 rounded-lg shadow-lg py-5 px-5">
+                    <div class="flex items-center">
+                        <i class="fa-solid fa-user-tie pr-5" style="color: #3bff48; font-size:30px ;"></i>
+                        <h1>Jerome Bell</h1>
+                    </div>
+                    <p class="pt-5">Muscle Gym is always positive and welcoming, making it easy to stay motivated and
+                        committed to my fitness goals. Plus, the facilities are impeccably clean and well-maintained,
+                        which
+                        is important to me. I couldn't be happier with my decision to join Muscle Gyml
+                    </p>
+                </div>
+                <div class="bg-gray-800 rounded-lg shadow-lg py-5 px-5">
+                    <div class="flex items-center">
+                        <i class="fa-solid fa-user-tie pr-5" style="color: #fb00e6; font-size:30px ;"></i>
+                        <h1>Jerome Bell</h1>
+                    </div>
+                    <p class="pt-5">Muscle Gym is always positive and welcoming, making it easy to stay motivated and
+                        committed to my fitness goals. Plus, the facilities are impeccably clean and well-maintained,
+                        which
+                        is important to me. I couldn't be happier with my decision to join Muscle Gyml
+                    </p>
+                </div>
+                <div class="bg-gray-800 rounded-lg shadow-lg py-5 px-5">
+                    <div class="flex items-center">
+                        <i class="fa-solid fa-user-tie pr-5" style="color: #3bf5ff; font-size:30px ;"></i>
+                        <h1>Jerome Bell</h1>
+                    </div>
+                    <p class="pt-5">Muscle Gym is always positive and welcoming, making it easy to stay motivated and
+                        committed to my fitness goals. Plus, the facilities are impeccably clean and well-maintained,
+                        which
+                        is important to me. I couldn't be happier with my decision to join Muscle Gyml
+                    </p>
+                </div>
+            </div>
+        </div>
+
+
+
+    </section>
+
+    <section class="lg:px-0 px-10 py-24 bg-slate-50">
+        <div class="container">
+            <h1 class="capitalize text-center lg:text-6xl text-4xl text-bold font-bold ">Why choose Muscle ?</h1>
+            <p class="capitalize text-center mt-4 "> discover the muscleForge difference expert coaching cutting edge
+                equipment and <br> a community committed to your success </p>
+            <div class="grid lg:grid-cols-6 mt-5 ">
+                <div></div>
+                <div></div>
+                <div>
+                    <div class="mt-5 text-center">
+                        <a href="/"
+                            class="bg-red-600 uppercase border-2 border-red-600  px-16 py-2 font-medium text-white hover:bg-white hover:text-red-600 ">join
+                            us now</a>
+
+                    </div>
+                </div>
+                <div>
+                    <div class="mt-5 text-center">
+                        <a href="/"
+                            class=" border-2 border-red-600  px-16 py-2 font-medium text-red-600  hover:bg-red-600 hover:text-white ">Contact
+                            US</a>
+
+                    </div>
+                </div>
+                <div></div>
+                <div></div>
+            </div>
+            <div class="text-center mt-10">
+                <!-- <video src="Gym_1280x720.mp4" class="inline-block" autoplay></video> -->
+                <video width="100%" height="auto" class="inline-block" autoplay loop muted>
+                    <source src="Gym_1280x720.mp4" type="video/mp4" />
+                </video>
+            </div>
+
+        </div>
+    </section>
+    <section class=" pb-24 lg:px-24 px-5 bg-slate-50">
+        <div class="container">
+            <h1 class="capitalize text-center lg:text-6xl text-4xl text-bold font-bold ">Answers to Your Questions</h1>
+            <p class="capitalize text-center mt-4">
+                Common inquiries About Muscle Gym Membership, Facilities, and Services
+            </p>
+            <div x-data="{ open: true }" class="mt-4 lg:mx-40">
+                <button 
+                    @click="open = !open"
+                    class="w-full flex justify-between items-center py-3 px-4 text-left bg-gray-50 border border-gray-200 rounded-lg focus:outline-none hover:bg-gray-100">
+                    <span class="font-medium">What are the membership options available at Muscle Gym?</span>
+                    <svg :class="{ 'rotate-180': open }" class="w-5 h-5 transition-transform transform" fill="none"
+                        stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                    </svg>
+                </button>
+                <div x-show="open" class="px-4 py-2 mt-2 text-gray-600 bg-white border-t border-gray-200">
+                    This option provides full access to our gym facilities during regular operating hours. It’s perfect
+                    for those who prefer to work out independently. Enjoy all the benefits of our Standard Membership,
+                    plus additional perks such as access to exclusive classes, priority booking for personal training
+                    sessions, and discounts on select services.
+                </div>
+                
+            </div>
+            <div x-data="{ open: false }" class="mt-4  lg:mx-40">
+                <button 
+                    @click="open = !open"
+                    class="w-full flex justify-between items-center py-3 px-4 text-left bg-gray-50 border border-gray-200 rounded-lg focus:outline-none hover:bg-gray-100">
+                    <span class="font-medium">What group fitness classes does Muscle Gym offer, and how do I sign up?
+                    </span>
+                    <svg :class="{ 'rotate-180': open }" class="w-5 h-5 transition-transform transform" fill="none"
+                        stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                    </svg>
+                </button>
+                <div x-show="open" class="px-4 py-2 mt-2 text-gray-600 bg-white border-t border-gray-200">
+                    This option provides full access to our gym facilities during regular operating hours. It’s perfect
+                    for those who prefer to work out independently. Enjoy all the benefits of our Standard Membership,
+                    plus additional perks such as access to exclusive classes, priority booking for personal training
+                    sessions, and discounts on select services.
+                </div>
+                
+            </div>
+            <div x-data="{ open: false }" class="mt-4  lg:mx-40">
+                <button 
+                    @click="open = !open"
+                    class="w-full flex justify-between items-center py-3 px-4 text-left bg-gray-50 border border-gray-200 rounded-lg focus:outline-none hover:bg-gray-100">
+                    <span class="font-medium">What facilities and equipment does Muscle Gym offer?
+
+                    </span>
+                    <svg :class="{ 'rotate-180': open }" class="w-5 h-5 transition-transform transform" fill="none"
+                        stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                    </svg>
+                </button>
+                <div x-show="open" class="px-4 py-2 mt-2 text-gray-600 bg-white border-t border-gray-200">
+                    This option provides full access to our gym facilities during regular operating hours. It’s perfect
+                    for those who prefer to work out independently. Enjoy all the benefits of our Standard Membership,
+                    plus additional perks such as access to exclusive classes, priority booking for personal training
+                    sessions, and discounts on select services.
+                </div>
+                
+            </div>
+            <div x-data="{ open: false }" class="mt-4  lg:mx-40">
+                <button 
+                    @click="open = !open"
+                    class="w-full flex justify-between items-center py-3 px-4 text-left bg-gray-50 border border-gray-200 rounded-lg focus:outline-none hover:bg-gray-100">
+                    <span class="font-medium">Can I bring a guest with me to Muscle Gym?
+
+                    </span>
+                    <svg :class="{ 'rotate-180': open }" class="w-5 h-5 transition-transform transform" fill="none"
+                        stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                    </svg>
+                </button>
+                <div x-show="open" class="px-4 py-2 mt-2 text-gray-600 bg-white border-t border-gray-200">
+                    This option provides full access to our gym facilities during regular operating hours. It’s perfect
+                    for those who prefer to work out independently. Enjoy all the benefits of our Standard Membership,
+                    plus additional perks such as access to exclusive classes, priority booking for personal training
+                    sessions, and discounts on select services.
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+
+  <!-- <section class="px-24 ">
+    <h1 class="text-6xl text-center mb-10 mt-10 font-extrabold demo">Updesh Kushwaha</h1>
+
+  </section> -->
+
+    <footer class="py-10 lg:px-24 px-10 bg-gray-900 text-white">
+        <div class="container">
+            <div class="grid lg:grid-cols-5 grid-cols-3  text-center lg:gap-0 gap-5">
+                <div class="lg:col-span-1 col-span-3">
+                   <div class="flex">
+                    <img src="logo-red.png" class="w-2/12 fill-slate-50" alt="">
+                    <h1 class="content-center ml-1 text-red-600 font-bold text-2xl ">Muscle</h1>
+                   </div>
+                    <h1 class="my-5">Top learning experiences that create more talent in the world.</h1>
+                </div>
+                <div class="">
+                    <ul>
+                        <li class="text-xl font-bold">Product</li>
+                        <li>Overview</li>
+                        <li>Features</li>
+                        <li>Solutions</li>
+                        <li>Tutorials</li>
+                        <li>Pricing</li>
+                    </ul>
+                </div>
+                <div class="">
+                    <ul>
+                        <li class="text-xl font-bold">Company</li>
+                        <li>About us</li>
+                        <li>Careers</li>
+                        <li>Press</li>
+                        <li>News</li>
+                    </ul>
+                </div>
+                <div class="">
+                    <ul>
+                        <li class="text-xl font-bold">Social</li>
+                        <li>Twitter</li>
+                        <li>Linkdin</li>
+                        <li>Gitub</li>
+                        <li>Dribble</li>
+                    </ul>
+                </div>
+                <div class="">
+                    <ul>
+                        <li class="text-xl font-bold">Legal</li>
+                        <li>Terms</li>
+                        <li>Privacy</li>
+                        <li>Cookies</li>
+                        <li>Contact</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="lg:px-24 px-10 pt-28 flex justify-between items-center">
+                <h1 class="text-left"><i class="fa fa-copyright" aria-hidden="true"></i>2024 Muscle. All rights reserved.</h1>
+                <ul class="flex flex-row ml-auto mx-10">
+                    <li><i class="fa-brands fa-twitter"></i></li>
+                    <li class="ml-5"><i class="fa-brands fa-linkedin"></i></li>
+                    <li class="ml-5"><i class="fa-brands fa-facebook"></i></li>
+                    <li class="ml-5"><i class="fa-brands fa-github"></i></li>
+                    <li class="ml-5"><i class="fa-solid fa-globe"></i></li>
+                </ul>
+            </div>
+            
+        </div>
+    </footer>
+
+   
+    
+    
+    <script src="https://unpkg.com/alpinejs@3.0.0/dist/cdn.min.js" defer></script>
+</body>
+
+</html>

@@ -1,0 +1,11 @@
+/* .bg-img{
+    background-image: url(gym-main.webp);
+    width: 100%;
+} */
+
+
+.demo{
+    background-image: url(goku.jpg);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
